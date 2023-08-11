@@ -1,0 +1,74 @@
+2023-08-10 23:42:57,900 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_create_and_retrieve_entry
+2023-08-10 23:42:57,900 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_create_and_retrieve_entry
+2023-08-10 23:42:57,910 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_without_id
+2023-08-10 23:42:57,910 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_without_id
+2023-08-10 23:42:57,917 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 400, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '91'}, Body: {"error":"Key: 'Customer.ID' Error:Field validation for 'ID' failed on the 'required' tag"}
+2023-08-10 23:42:57,917 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 400, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '91'}, Body: {"error":"Key: 'Customer.ID' Error:Field validation for 'ID' failed on the 'required' tag"}
+2023-08-10 23:42:57,918 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_without_id
+2023-08-10 23:42:57,918 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_without_id
+2023-08-10 23:42:57,918 - functional_test_2023-08-10_23-42-57 - INFO - POST Response - Status: 200, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '30'}, Body: {"message":"customer created"},Accessed URL: http://localhost:8080/api,Request Headers: {'user-agent': 'test', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-session-token': 'authorized-user', 'Content-Type': 'application/json', 'Content-Length': '102'}
+2023-08-10 23:42:57,918 - functional_test_2023-08-10_23-42-57 - INFO - POST Response - Status: 200, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '30'}, Body: {"message":"customer created"},Accessed URL: http://localhost:8080/api,Request Headers: {'user-agent': 'test', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-session-token': 'authorized-user', 'Content-Type': 'application/json', 'Content-Length': '102'}
+2023-08-10 23:42:57,944 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_invalid_user_agent
+2023-08-10 23:42:57,944 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_invalid_user_agent
+2023-08-10 23:42:57,945 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_name_exceeding_limit
+2023-08-10 23:42:57,945 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_name_exceeding_limit
+2023-08-10 23:42:57,948 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 500, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '60'}, Body: {"error":"CHECK constraint failed: length(name) \u003c= 50"}
+2023-08-10 23:42:57,948 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 400, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '70'}, Body: {"error":"malformed request"}{"error":"error while fetching customer"},Request Headers: {'user-agent': 'test', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-session-token': 'authorized-user', 'Content-Type': 'application/json'}
+2023-08-10 23:42:57,948 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 500, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '60'}, Body: {"error":"CHECK constraint failed: length(name) \u003c= 50"}
+2023-08-10 23:42:57,948 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 400, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '70'}, Body: {"error":"malformed request"}{"error":"error while fetching customer"},Request Headers: {'user-agent': 'test', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-session-token': 'authorized-user', 'Content-Type': 'application/json'}
+2023-08-10 23:42:57,949 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_name_exceeding_limit
+2023-08-10 23:42:57,949 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_name_exceeding_limit
+2023-08-10 23:42:57,949 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_invalid_user_agent
+2023-08-10 23:42:57,949 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_invalid_user_agent
+2023-08-10 23:42:57,958 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_phone_number_not_10_chars
+2023-08-10 23:42:57,958 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_phone_number_not_10_chars
+2023-08-10 23:42:57,959 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_with_special_characters_in_name
+2023-08-10 23:42:57,959 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_with_special_characters_in_name
+2023-08-10 23:42:57,960 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_empty_name
+2023-08-10 23:42:57,960 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_empty_name
+2023-08-10 23:42:57,960 - functional_test_2023-08-10_23-42-57 - INFO - {'id': '1058134410786', 'name': '', 'phone_number': '9299214266'}
+2023-08-10 23:42:57,960 - functional_test_2023-08-10_23-42-57 - INFO - {'id': '1058134410786', 'name': '', 'phone_number': '9299214266'}
+2023-08-10 23:42:57,962 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 400, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '39'}, Body: {"error":"name has special characters"}
+2023-08-10 23:42:57,962 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 500, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '62'}, Body: {"error":"CHECK constraint failed: length(phone_number) = 10"}
+2023-08-10 23:42:57,962 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 400, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '39'}, Body: {"error":"name has special characters"}
+2023-08-10 23:42:57,962 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 500, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '62'}, Body: {"error":"CHECK constraint failed: length(phone_number) = 10"}
+2023-08-10 23:42:57,963 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_phone_number_not_10_chars
+2023-08-10 23:42:57,963 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_phone_number_not_10_chars
+2023-08-10 23:42:57,963 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_with_special_characters_in_name
+2023-08-10 23:42:57,963 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_with_special_characters_in_name
+2023-08-10 23:42:57,964 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 200, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '30'}, Body: {"message":"customer created"}
+2023-08-10 23:42:57,964 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 200, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '30'}, Body: {"message":"customer created"}
+2023-08-10 23:42:57,967 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_empty_name
+2023-08-10 23:42:57,967 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_empty_name
+2023-08-10 23:42:57,970 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_empty_phone_number
+2023-08-10 23:42:57,970 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_empty_phone_number
+2023-08-10 23:42:57,970 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_non_numeric_phone_number
+2023-08-10 23:42:57,970 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_non_numeric_phone_number
+2023-08-10 23:42:57,973 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 400, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '109'}, Body: {"error":"Key: 'Customer.PhoneNumber' Error:Field validation for 'PhoneNumber' failed on the 'required' tag"}
+2023-08-10 23:42:57,973 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 400, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '109'}, Body: {"error":"Key: 'Customer.PhoneNumber' Error:Field validation for 'PhoneNumber' failed on the 'required' tag"}
+2023-08-10 23:42:57,974 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_empty_phone_number
+2023-08-10 23:42:57,974 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_empty_phone_number
+2023-08-10 23:42:57,975 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 200, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '30'}, Body: {"message":"customer created"}
+2023-08-10 23:42:57,975 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 200, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '30'}, Body: {"message":"customer created"}
+2023-08-10 23:42:57,980 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_duplicate_entry
+2023-08-10 23:42:57,980 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_duplicate_entry
+2023-08-10 23:42:57,989 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 200, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '30'}, Body: {"message":"customer created"}
+2023-08-10 23:42:57,989 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 200, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '30'}, Body: {"message":"customer created"}
+2023-08-10 23:42:57,991 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 500, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '50'}, Body: {"error":"UNIQUE constraint failed: customers.id"}
+2023-08-10 23:42:57,991 - functional_test_2023-08-10_23-42-57 - INFO - Received Response - Status: 500, Headers: {'Content-Type': 'application/json; charset=utf-8', 'Date': 'Thu, 10 Aug 2023 18:12:57 GMT', 'Content-Length': '50'}, Body: {"error":"UNIQUE constraint failed: customers.id"}
+2023-08-10 23:42:57,995 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_duplicate_entry
+2023-08-10 23:42:57,995 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_duplicate_entry
+2023-08-10 23:42:58,007 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_non_numeric_phone_number
+2023-08-10 23:42:58,007 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_non_numeric_phone_number
+2023-08-10 23:43:15,111 - functional_test_2023-08-10_23-42-57 - INFO - GET Response - Status: 200, Body: {"id":"7999486483524","name":"STOPdkJqsBEPHgTInjxnEypWKgBjtRLbNZDfv","phone_number":"7459945823","sms_sent":true},Accessed URL: http://localhost:8080/api?id=7999486483524,Request Headers: {'user-agent': 'test', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-session-token': 'authorized-user', 'Content-Type': 'application/json'}
+2023-08-10 23:43:15,111 - functional_test_2023-08-10_23-42-57 - INFO - GET Response - Status: 200, Body: {"id":"7999486483524","name":"STOPdkJqsBEPHgTInjxnEypWKgBjtRLbNZDfv","phone_number":"7459945823","sms_sent":true},Accessed URL: http://localhost:8080/api?id=7999486483524,Request Headers: {'user-agent': 'test', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'x-session-token': 'authorized-user', 'Content-Type': 'application/json'}
+2023-08-10 23:43:15,113 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_create_and_retrieve_entry
+2023-08-10 23:43:15,113 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_create_and_retrieve_entry
+2023-08-10 23:43:15,121 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_valid_fields
+2023-08-10 23:43:15,121 - functional_test_2023-08-10_23-42-57 - INFO - Setting up for test: test_post_valid_fields
+2023-08-10 23:43:15,122 - functional_test_2023-08-10_23-42-57 - INFO - {"id": "7183952408053", "name": "yewujjMwOWkOHNJwIiudZotGC", "phone_number": "0960801918"}
+2023-08-10 23:43:15,122 - functional_test_2023-08-10_23-42-57 - INFO - {"id": "7183952408053", "name": "yewujjMwOWkOHNJwIiudZotGC", "phone_number": "0960801918"}
+2023-08-10 23:43:15,128 - functional_test_2023-08-10_23-42-57 - INFO - Test passed!
+2023-08-10 23:43:15,128 - functional_test_2023-08-10_23-42-57 - INFO - Test passed!
+2023-08-10 23:43:15,130 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_valid_fields
+2023-08-10 23:43:15,130 - functional_test_2023-08-10_23-42-57 - INFO - Tearing down after test: test_post_valid_fields
